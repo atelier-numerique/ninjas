@@ -16,13 +16,10 @@
     .container-fluid, .row {
       height: 100%;
     }
-    #image {
-        margin: 1vh 0vh 1vh 1vh;
-        height: calc(100vh - 2vh);
-        max-width: calc(100vw - 2vh);
-        border-radius: 8px;
+    #pyxel-screen {
+        position:relative !important;
+        width:100vh !important;
     }
-
   </style>
 </head>
 <body class="h-100">
@@ -31,14 +28,14 @@
     <div class="row h-100">
       <div class="col mt-5">
         <h6 class="font-monospace text-center fw-bold m-0 p-0 mt-5">Projet</h6>
-        <h1 class="font-monospace text-center fw-bold m-0 p-0">Art-léatoire</h1>
+        <h1 class="font-monospace text-center fw-bold m-0 p-0">Manettes</h1>
         <h4 class="font-monospace text-secondary text-center fw-bold">2025</h4>
         <h2 class="font-monospace text-danger text-center fw-bold mt-4">NSI<br />Première</h2>
-        <div class="font-monospace text-muted text-center">PYTHON + PILLOW + RANDOM</div>
+        <div class="font-monospace text-muted text-center">Raspberry Pi Pico + Javascript</div>
       </div>
       <div class="col-auto text-end">
         <div id="pyxel-screen">
-        <pyxel-run root="." name="app.py"></pyxel-run>
+          <pyxel-run root="." name="app.py"></pyxel-run>
         </div>
       </div>
     </div>
