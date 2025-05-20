@@ -193,7 +193,7 @@ class Game:
                 self.restart_frames = 0
             else:
                 self.restart_frames += 1
-                if self.restart_frames % 60 == 0:  # Une seconde (à 60 FPS)
+                if self.restart_frames % 40 == 0:  # Une seconde (à 60 FPS)
                     self.restart_countdown -= 1
                     if self.restart_countdown == 0:
                         self.games = [MiniGame(i) for i in range(4)]
